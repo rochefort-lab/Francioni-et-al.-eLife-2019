@@ -1,4 +1,4 @@
-# Pakan, Currie, Fischer, Rochefort, Cell Report 2018
+# Francioni, Padamsey, Rochefort, eLife 2019
 MATLAB code from the Rochefort lab used for analysis in this paper.
 
 ## General notes
@@ -13,18 +13,17 @@ Below are the functions used for each figure in the paper.
 Letters on the left indicate the corresponding panel within each figure.
 
 ## Figure 1
-    E) Functions used: upper panel, VRsuccessRate; lower panel, successRateSMI_VR.
+    Functions used: upper panel, VRsuccessRate; lower panel, successRateSMI_VR.
 ## Figure 2
-    C) Functions used: pairedTestGratVSrwdZone
-    D) Functions used: tempMatchVR_HitMiss
-    E) Functions used: pairedTestGratVSrwdZone; successRateSMI_VR.
+    Functions used: pairedTestGratVSrwdZone
+    Functions used: tempMatchVR_HitMiss
+    Functions used: pairedTestGratVSrwdZone; successRateSMI_VR.
 ## Figure 3
     B) Functions used: VRsuccessRate
     C) Functions used: pairedTestGratVSrwdZone; binnedVRDataHit; binnedVRDataMiss 
     D) Functions used: tempMatchVR_RZ_CuedUncued
     E-F) Mean calcium activity for gain modulated and normal trials. Functions used: gainModVRData
 ## Figure S1
-    A) Schematic of reward zone onset (see pairedTestGratVSrwdZone)
     B-C) Division of response categories and example calcium traces. Functions used: pairedTestGratVSrwdZone; lmiVR; TestLicksVSnonLickPreRwd
 ## Figure S2 
     A) Functions used: trialTime
