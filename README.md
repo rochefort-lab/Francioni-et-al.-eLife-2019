@@ -13,33 +13,18 @@ Below are the functions used for each figure in the paper.
 Letters on the left indicate the corresponding panel within each figure.
 
 ## Figure 1
-    Functions used: upper panel, VRsuccessRate; lower panel, successRateSMI_VR.
+   
 ## Figure 2
-    Functions used: pairedTestGratVSrwdZone
-    Functions used: tempMatchVR_HitMiss
-    Functions used: pairedTestGratVSrwdZone; successRateSMI_VR.
+   
 ## Figure 3
-    B) Functions used: VRsuccessRate
-    C) Functions used: pairedTestGratVSrwdZone; binnedVRDataHit; binnedVRDataMiss 
-    D) Functions used: tempMatchVR_RZ_CuedUncued
-    E-F) Mean calcium activity for gain modulated and normal trials. Functions used: gainModVRData
+    
 ## Figure 4
-    B) Functions used: VRsuccessRate
-    C) Functions used: pairedTestGratVSrwdZone; binnedVRDataHit; binnedVRDataMiss 
-    D) Functions used: tempMatchVR_RZ_CuedUncued
-    E-F) Mean calcium activity for gain modulated and normal trials. Functions used: gainModVRData
+   
 ## Figure 5
-    Functions used: pairedTestGratVSrwdZone
-    Functions used: tempMatchVR_HitMiss
-    Functions used: pairedTestGratVSrwdZone; successRateSMI_VR.
+   
 ## Figure 6
-    Functions used: pairedTestGratVSrwdZone
-    Functions used: tempMatchVR_HitMiss
-    Functions used: pairedTestGratVSrwdZone; successRateSMI_VR.
+    
 ## Figure 2-supplementary 1
-    B-C) Division of response categories and example calcium traces. Functions used: pairedTestGratVSrwdZone; lmiVR; TestLicksVSnonLickPreRwd
+    
 ## Figure 5- supplementary 2
-    A) Functions used: trialTime
-    D) Functions used: peakVarByOnset
-    E) Functions used: slowMedfastTrials
-    F) Functions used: mancovaVR; mancovaVRshuffDist
+ 
