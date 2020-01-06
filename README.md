@@ -19,7 +19,8 @@ Letters on the left indicate the corresponding panel within each figure.
 ## Figure 3
     
 ## Figure 4
--Figure 4 uses exVivo_Extraction&Analysis to extract and analyze ex vivo data.
+exVivo_Extraction&Analysis.m
+ReadImageJRoi.m (external)
 
 ## Figure 5
    
