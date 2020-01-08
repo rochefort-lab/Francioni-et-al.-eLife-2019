@@ -13,57 +13,46 @@ Below are the functions used for each figure in the paper.
 Letters on the left indicate the corresponding panel within each figure.
 
 ## Figure 1
-   D: Apical_tuft_main 
-   F: Apical_tuft_main 
-   H: Apical_tuft_main 
-   I : Apical_tuft_main 
-   J : Apical_tuft_main 
+   D,F,H,I,J) Apical_tuft_main 
    
 ## Figure 2
-   D: Compartments_main
+   D) Compartments_main
    
 ## Figure 3
-   B: Compartments_main 
-   C: Compartments_main 
+   B-C) Compartments_main 
     
 ## Figure 4
    exVivo_Extraction&Analysis.m
+   
    ReadImageJRoi.m (external)
 
 ## Figure 5
-   A: Compartments_main 
-   B: Compartments_conditions 
-   D: Compartments_conditions 
+   A) Compartments_main 
+   B,D) Compartments_conditions 
    
 ## Figure 6
-   D: Apical_tuft_main 
-   E: Visual_stim_analysis
-   F: Visual_stim_analysis
-   G: Visual_stim_analysis
-   H: Visual_stim_analysis
-   I: Visual_stim_analysis
-   J: Visual_stim_analysis
-   K: Visual_compartments 
-   L: Visual_stim_analysis
-   M: Visual_compartments 
+   D) Apical_tuft_main 
+   E-K) Visual_stim_analysis
+   L) Visual_stim_analysis
+   M) Visual_compartments 
     
 ## Figure 1 - supplementary 2
-   B: Apical_tuft_main 
-   C: Compartments_main 
-   D: Times_Apical_tuft 
-   E : Times_Apical_tuft 
-   F : Times_Compartments 
+   B) Apical_tuft_main 
+   C) Compartments_main 
+   D) Times_Apical_tuft 
+   E) Times_Apical_tuft 
+   F) Times_Compartments 
     
 ## Figure 2 - supplementary 2
-   B: Compartments_main
+   B) Compartments_main
  
 ## Figure 3 - supplementary 1
-   B: Compartments_main 
-   C: Apical_tuft_main 
+   B) Compartments_main 
+   C) Apical_tuft_main 
 
 ## Figure 5 - supplementary 1
-   A: Compartments_conditions 
-   B: Compartments_conditions 
+   A) Compartments_conditions 
+   B) Compartments_conditions 
 
 ## Figure 5 - supplementary 2
-   A: Times_Compartments
+   A) Times_Compartments
