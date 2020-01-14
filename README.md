@@ -39,7 +39,12 @@ and two parameters can vary when calling **get_FOVtuft_coincident_peaks.m**:
     B) see Fig1 panel J
     
 ## Figure 3
-    B,C) see Fig1 panel J, between planes
+    B) get the frequency of events using detect_df_peaks.m ; see get_FOVtuft_peaks.m at the start of main_fig1.m
+    C) see Fig1 panel J, between planes
+    
+## Figure 3 - supplementary 1
+    B) see Fig1 panel J
+    C) get the frequency of events using detect_df_peaks.m ; see get_FOVtuft_peaks.m at the start of main_fig1.m
     
 ## Figure 4 & Figure 4 supplementary 1
     exVivo_Extraction_Analysis.m 
