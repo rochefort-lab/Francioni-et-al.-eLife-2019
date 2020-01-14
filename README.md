@@ -2,57 +2,53 @@
 MATLAB code from the Rochefort lab used for analysis in this paper.
 
 ## General notes
-- The functions used for analysis are defined in two files, **getFuncHandleRec.m** or **getFuncHandleRGroup.m**. 
-These files can be found in the folder **\analysis**.
-The analysis functions may call other specific functions (e.g. compute_lmi.m), which can be found in **\analysis\projectfunctions**, 
-as well as utilities tools (e.g. for data handling) which are in the folder **\analysis\utilities**.
-- Code downloaded from external sources can be found in the folder **\external** (licence in corresponding folder).
-- The documentation for each function can be found in the corresponding matlab files.
+- The code in the folder **/Peaks_functions** includes functions used to find peaks in deltaf traces (**detect_df_peaks.m**), 
+extract the peak deltaf window (**get_peakwindow_df.m**) and peaks coincidence between two compartments (**get_coincident_events.m**). 
+
+- A practical example is given for the apical tuft results presented in Figure 1 (**main_fig1.m** and **/Fig1_functions** folder). 
+For all remaining figures, except for ***_Electrophysiology_ in Figure 4***, we refer to the relevant panels in Figure 1 
+which implement the same method.
+
+- The analysis functions may call other specific functions in the folder **/Utilities**, e.g. for data handling or plot.
+
+- Code downloaded from external sources can be found in the folder **/External** (licence in corresponding folder).
 
 Below are the functions used for each figure in the paper. 
 Letters on the left indicate the corresponding panel within each figure.
 
 ## Figure 1
-   D,F,H,I,J) Apical_tuft_main 
+The main functions and plot scripts for each panel are called in **main_fig1.m**.
+   D) get_FOVtuft_peaks.m, detect_df_peaks.m, compute_FOVtuft_peak_corr.m (calls get_peakwindow_df.m)
+   F) see panel D.
+   I) get_FOVtuft_peaks.m, detect_df_peaks.m, compute_FOVtuft_peak_corr.m (calls get_peakwindow_df.m)
+   J) get_FOVtuft_peaks.m, detect_df_peaks.m, get_FOVtuft_coincident_peaks.m (calls get_coincident_events.m)
    
+## Figure 1 - supplementary 2
+For each panel see Fig1 panel J. The same method is applied for various compartments, 
+and two parameters can vary when calling get_FOVtuft_coincident_peaks.m:
+(i) the peak detection threshold (*k_dfthresh*) and (ii) the peak window size (*k_window*) 
+
+	B,C) see Fig1 panel J, vary peak detection threshold
+	E,F) see Fig1 panel J, vary peak window size
+
 ## Figure 2
-   D) Compartments_main
+   D) see Fig1 panel D, between planes
+   
+## Figure 2 - supplementary 2
+   B) see Fig1 panel J
    
 ## Figure 3
-   B-C) Compartments_main 
-    
+   B,C) see Fig1 panel J, between planes
+
 ## Figure 4 & Figure 4 supplementary 1
-   exVivo_Extraction&Analysis.m
-   
-   ReadImageJRoi.m (external)
+   exVivo_Extraction_Analysis.m and ReadImageJRoi.m (external)
 
 ## Figure 5
-   A) Compartments_main 
-   B,D) Compartments_conditions 
+   A,B) see Fig1 panel J, between planes; vary condition (*stim_action_state*)
+   
+## Figure 5 - supplementary 1 & 2
+   S1-A,B; S2-A) see Fig1 panel J, between planes; vary condition (*stim_action_state*)
    
 ## Figure 6
-   D) Apical_tuft_main 
-   E-K) Visual_stim_analysis
-   L) Visual_stim_analysis
-   M) Visual_compartments 
+   D,L,M) see Fig1 panel D; select deltaf during specific stimulation (e.g. preferred orientation)
     
-## Figure 1 - supplementary 2
-   B) Apical_tuft_main 
-   C) Compartments_main 
-   D) Times_Apical_tuft 
-   E) Times_Apical_tuft 
-   F) Times_Compartments 
-    
-## Figure 2 - supplementary 2
-   B) Compartments_main
- 
-## Figure 3 - supplementary 1
-   B) Compartments_main 
-   C) Apical_tuft_main 
-
-## Figure 5 - supplementary 1
-   A) Compartments_conditions 
-   B) Compartments_conditions 
-
-## Figure 5 - supplementary 2
-   A) Times_Compartments
