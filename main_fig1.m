@@ -42,22 +42,22 @@ corPerFov = cat(1, corPerFov{:}); % [nAnimals*nFovs_tot x 1]
 ShuffledPerFov = cat(1, ShuffledPerFov{:}); % [nAnimals*nFovs_tot x 1]
 
 
-
-figure(4409)
-bar([0 nanmean(PeakCorrAnimal) nanmean(ShuffledPeakCorrAnimal) 0], 'k')
-hold on
-for ii=1:size(PeakCorrAnimal,1)
-  scatter([2,3],[PeakCorrAnimal(ii,1),ShuffledPeakCorrAnimal(ii,1)],'MarkerEdgeColor', [0.7 0.7 0.7],...
-              'MarkerFaceColor',[0.7 .7 .7])
-end
-hold on
-SEM = [0 nanstd(PeakCorrAnimal)/sqrt(length(PeakCorrAnimal))...
-    nanstd(ShuffledPeakCorrAnimal)/sqrt(length(ShuffledPeakCorrAnimal)) 0];
-errorbar([0 nanmean(PeakCorrAnimal) nanmean(ShuffledPeakCorrAnimal) 0], SEM, '.black', 'LineWidth', 2)
-hold on
-ylim([-0.3 1.1])
-hold off
-[p, s] = ttest(PeakCorrAnimal(~isnan(PeakCorrAnimal)), ShuffledPeakCorrAnimal(~isnan(ShuffledPeakCorrAnimal)) );
+% Correlation per Animal (not in the paper)
+% figure(4409)
+% bar([0 nanmean(PeakCorrAnimal) nanmean(ShuffledPeakCorrAnimal) 0], 'k')
+% hold on
+% for ii=1:size(PeakCorrAnimal,1)
+  % scatter([2,3],[PeakCorrAnimal(ii,1),ShuffledPeakCorrAnimal(ii,1)],'MarkerEdgeColor', [0.7 0.7 0.7],...
+              % 'MarkerFaceColor',[0.7 .7 .7])
+% end
+% hold on
+% SEM = [0 nanstd(PeakCorrAnimal)/sqrt(length(PeakCorrAnimal))...
+    % nanstd(ShuffledPeakCorrAnimal)/sqrt(length(ShuffledPeakCorrAnimal)) 0];
+% errorbar([0 nanmean(PeakCorrAnimal) nanmean(ShuffledPeakCorrAnimal) 0], SEM, '.black', 'LineWidth', 2)
+% hold on
+% ylim([-0.3 1.1])
+% hold off
+% [p, s] = ttest(PeakCorrAnimal(~isnan(PeakCorrAnimal)), ShuffledPeakCorrAnimal(~isnan(ShuffledPeakCorrAnimal)) );
 
 
 
@@ -68,10 +68,6 @@ hold on
 SEM = [0 nanstd(corPerFov)./sqrt(sum(~isnan(corPerFov))) ...
     nanstd(ShuffledPerFov)./sqrt(sum(~isnan(ShuffledPerFov))) 0];
 hold on
-% for ii=1:numel(corPerFov)
-%   scatter([2,3],[corPerFov(ii),ShuffledPerFov(ii)],'MarkerEdgeColor', 'k',...
-%               'MarkerFaceColor',[0.7 .7 .7])
-% end
 C = cat(2, nan(numel(corPerFov),1), corPerFov, ShuffledPerFov, nan(numel(corPerFov),1));
 plotSpread(C, 'distributionColors', [0.5 0.5 0.5])
 set(findall(4409,'type','line','color',[0.5 0.5 0.5]),'markerSize',15);
