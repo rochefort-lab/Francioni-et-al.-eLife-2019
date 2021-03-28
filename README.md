@@ -13,6 +13,10 @@ which implement the same method.
 Below are the functions used for each figure in the paper. 
 Letters on the left indicate the corresponding panel within each figure.
 
+## 3D Reconstructions of the neurons
+The 3D reconstructions of 19 neurons included in the manuscript are freely available at:
+
+http://neuromorpho.org/KeywordResult.jsp?count=19&keywords=%22rochefort%22
 
 ## Figure 1
 The main functions and plot scripts for each panel are called in **main_fig1.m**.
@@ -49,6 +53,8 @@ and two parameters can vary when calling **get_FOVtuft_coincident_peaks.m**:
 ## Figure 4 & Figure 4 supplementary 1
     exVivo_Extraction_Analysis.m 
     ReadImageJRoi.m (external)
+    
+    Data available as xlsx tables in folders /Fig4_Data and /Fig4S1_Data
 
 ## Figure 5
     A,B) see Fig1 panel J, between planes; vary condition (stim_action_state)
