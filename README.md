@@ -13,6 +13,11 @@ which implement the same method.
 Below are the functions used for each figure in the paper. 
 Letters on the left indicate the corresponding panel within each figure.
 
+## Data repository
+Repository for electrophysiological and anatomical data included in the article:
+
+https://datashare.ed.ac.uk/handle/10283/3873
+
 ## 3D Reconstructions of the neurons
 The 3D reconstructions of 19 neurons included in the manuscript are freely available at:
 
